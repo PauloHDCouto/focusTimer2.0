@@ -3,9 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus Timer 2.0</title>
+  <title>FocusTimer2.0</title>
+  <link rel="shortcut icon" href="./assets/ph_pause-circle.svg" type="image/x-svg">
+  <script src="./js/main.js" defer type="module"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body>
-  
+
+  <div id="app">
+    <button id="toggle-mode">
+      <span class="sr-only">Ativar ligth mode!</span>
+      <i class="ph-bold ph-sun"></i>
+      <i class="ph-bold ph-moon"></i>
+    </button>
+
+    <section id="timer" class="flex">
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </section>
+
+    <section id="controls" >
+      <button>
+        <img id="btnplay" src="./assets/play.svg" alt="Iniciar contador">
+        <span class="sr-only">Iniciar contador</span>
+      </button>
+      <button>
+        <img id="btnstop" src="./assets/stop.svg" alt="Parar contador">
+        <span class="sr-only">Parar contador</span>
+      </button>
+      <button>
+        <img id="btnplus" src="./assets/+.svg" alt="Acrescentar contador">
+        <span class="sr-only">Acrescentar contador</span>
+      </button>
+      <button>
+        <img id="btnminor" src="./assets/-.svg" alt="Diminuir contador">
+        <span class="sr-only">Diminuir contador</span>
+      </button>
+    </section>
+
+    <section id="sounds">
+      <button data-action="jungle">
+        <img id="btnjungle" class="color" src="./assets/Card 01.svg" alt="Icone Floresta">
+        <span class="sr-only">Iniciar contador</span>
+      </button>
+      <button data-action="clound">
+        <img id="btnclound" src="./assets/Card 02.svg" alt="Icone Nuvem">
+        <span class="sr-only">Parar contador</span>
+      </button>
+      <button data-action="fire">
+        <img id="btnfire" src="./assets/Card 03.svg" alt="Icone Cafeteria">
+        <span class="sr-only">Acrescentar contador</span>
+      </button>
+      <button data-action="coffe">
+        <img id="btncoffe" src="./assets/Card 04.svg" alt="Icone Chama">
+        <span class="sr-only">Diminuir contador</span>
+      </button>
+    </section>
+
+  </div>
+
 </body>
 </html>
